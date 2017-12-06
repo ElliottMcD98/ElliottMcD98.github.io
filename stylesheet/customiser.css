@@ -1,0 +1,117 @@
+html, body {
+
+	background:#cccccc;
+	font-family: courier;
+	margin:auto;
+	height:100%;
+	width:100%;
+	font-size: 100%;
+
+
+
+}
+
+a{
+	text-decoration: none;
+}
+
+
+#header
+{
+	background:#f2f2f2;
+	position:fixed;
+	z-index: 1;
+	width:100%;
+	top:0px;
+	left:0px;
+	height:12%;
+
+}
+
+
+.title
+{
+	float:left;
+	margin:0;
+	}
+
+.nav{
+	float:right;
+	width:20%;
+	padding-top:2%;
+}
+
+.nav li
+{
+	display:inline;
+	margin-right: 4%;
+
+}
+
+.title h1{
+	float:left;
+}
+.title img{
+	float:left;
+}
+
+#footer{
+	background:#f2f2f2;
+	width:100%;
+	position:absolute;
+	bottom:0px;	
+	height:25%;
+}
+
+
+#footer img {
+	bottom:0;
+
+
+
+
+}
+
+#footer li{
+	list-style: none;
+	float:left;
+	margin-left: 15px;
+	padding-top: 15px;
+
+}
+
+#footer ul{
+	background:white;
+	width:100%;
+}
+
+#guitar img{
+	position:fixed;
+	
+}
+
+#guitar #head img{
+	padding-left:69%;
+	top:34%;
+}
+
+#guitar #plate img{
+	top:30%;
+	left:25.5%;
+}
+
+#guitar #neck img{
+	left:39%;
+	top:36.1%;
+}
+
+#guitar #body img{
+	left:19.2%;
+	top:20.1%;
+}
+
+#guitar{
+	
+
+}
+
