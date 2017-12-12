@@ -79,15 +79,36 @@ html, body {
 	width:100%;
 }
 .Question{
-	padding-top:7%;
-	padding-left:30%;
+	top:15%;
+	left:30%;
+	text-align:center;
+	position:absolute;
 }
 
 .Question h2{
+	
+	margin:0;
+	padding:0;
 	text-align:center;
-	position:absolute;
-	top:15%;
-	left:32%;
+	position: absolute;
+	top: 20%;
+	right: 0;
+    bottom: 0;
+    left: 0;
+	
+	
+}
+
+.answers h2{
+	margin:0;
+	padding:0;
+	text-align:center;
+	position: absolute;
+	top: 15%;
+	right: 20%;
+    bottom: 55%;
+    left: 20%;
+
 }
 
 
