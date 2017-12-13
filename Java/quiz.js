@@ -117,6 +117,7 @@ function nextquestion(count)
 
 		if (count == 5)
 	{
+
 	document.getElementById("nextquestion").innerHTML = (question5);
 	document.getElementById("Qpic1").src = "Assets/AnswerBox.png";
 	document.getElementById("Qpic2").src = "Assets/AnswerBox.png";
@@ -139,20 +140,56 @@ function nextquestion(count)
 
 
 	count = count + 1;
+	console.log(count);
 
 
-	if (count == 6)
+	if (count == 7)
 	{
-	document.getElementById("nextquestion").innerHTML = (question5);
-	document.getElementById("Qpic1").src = null;
-	document.getElementById("Qpic2").src = null;
-	document.getElementById("Qpic3").src = null;
-	document.getElementById("Qpic4").src = null;
+		
+		$(".answers").remove();
+		if (A > B && A > C && A > D)
+		{
+			document.getElementById("nextquestion").innerHTML = ("You're like Anthony");
+			var pic = document.createElement("img");
+			pic.src = "Assets/AnthonyKiedis.jpg";
+			document.getElementById("resultpic").appendChild(pic);
+			
+		}
 
-	document.getElementById("Qtext1").innerHTML = null;
-	document.getElementById("Qtext2").innerHTML = null;
-	document.getElementById("Qtext3").innerHTML = null;
-	document.getElementById("Qtext4").innerHTML = null;
+		else if (B > A && B > C && B > D)
+		{
+			console.log("You're like Flea");
+			document.getElementById("nextquestion").innerHTML = ("You're like Flea");
+			var pic = document.createElement("img");
+			pic.src = "Assets/Flea.jpg";
+			document.getElementById("resultpic").appendChild(pic);
+		}
+
+		else if (C > A && C > B && C > D)
+		{
+			document.getElementById("nextquestion").innerHTML = ("You're like Chad");
+			var pic = document.createElement("img");
+			pic.src = "Assets/Chad.jpg";
+			document.getElementById("resultpic").appendChild(pic);
+			
+		}
+
+		else if (D > A && D > C && D > B)
+		{
+			document.getElementById("nextquestion").innerHTML = ("You're like Josh");
+			var pic = document.createElement("img");
+			pic.src = "Assets/Josh.jpg";
+			document.getElementById("resultpic").appendChild(pic);
+		}
+
+		else
+		{
+			document.getElementById("nextquestion").innerHTML = ("You're like John");
+			var pic = document.createElement("img");
+			pic.src = "Assets/John.jpg";
+			document.getElementById("resultpic").appendChild(pic);
+		}
+
 
 
 	}
