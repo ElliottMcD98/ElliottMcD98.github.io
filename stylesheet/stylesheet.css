@@ -14,6 +14,16 @@ html, body {
 
 }
 
+h1
+{
+	text-shadow: 0 0 3px red;
+}
+
+h2
+{
+	text-shadow: 0 0 3px red;
+}
+
 .container{
 	width: 78%;
 	margin:0 auto;
@@ -137,9 +147,20 @@ html, body {
 }
 
 #home h2{
-	top:18%;
+	top:10%;
 	left:45%;
 	position:absolute;
+}
+
+
+
+#buyLinks li {
+	list-style: none;
+	float:left;
+	margin-left: 15px;
+	padding-top: 15px;
+	
+
 }
 
 .videos iframe{
@@ -151,4 +172,23 @@ html, body {
 	border:0;
 	margin:0;
 	padding:0;
+}
+
+#contact h1{
+	text-align: center;
+}
+
+
+#map{
+	float:right;
+}
+
+#map h2{
+	text-align:center;
+}
+
+form{
+	float:left;
+	left:30%;
+	position:absolute;
 }

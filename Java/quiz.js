@@ -178,7 +178,7 @@ function nextquestion(count)
 		{
 			document.getElementById("nextquestion").innerHTML = ("You're like Josh");
 			var pic = document.createElement("img");
-			pic.src = "Assets/Josh.jpg";
+			pic.src = "Assets/josh.jpg";
 			document.getElementById("resultpic").appendChild(pic);
 		}
 
@@ -186,7 +186,7 @@ function nextquestion(count)
 		{
 			document.getElementById("nextquestion").innerHTML = ("You're like John");
 			var pic = document.createElement("img");
-			pic.src = "Assets/John.jpg";
+			pic.src = "Assets/john.jpg";
 			document.getElementById("resultpic").appendChild(pic);
 		}
 
