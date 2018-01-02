@@ -38,20 +38,20 @@ h2
 .content li {
 	list-style: none;
     text-align: center;
+    font-size:2vw;
     
 
 
 
 }
 
-.content ul {
-	position: absolute; 
-   top: 130%; 
-   margin-left: 0%;
-   margin-right: 0%;
-   left:0%;
-   right:0%;
-   font-size: 170%
+.content ul 
+{
+	top:130%;
+	position:absolute;
+	left:0%;
+	right:0%;
+   
 }
 
 
@@ -69,6 +69,7 @@ h2
 	width:100%;
 	position:absolute;
 	top:400%;
+
 	
 }
 
@@ -99,6 +100,7 @@ h2
 {
 	float:left;
 	margin:0;
+	font-size:1vw;
 	}
 
 .nav{
@@ -112,6 +114,7 @@ h2
 	display:inline;
 	margin-right: 4%;
 	float:right;
+	font-size:1vw;
 
 }
 
