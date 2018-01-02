@@ -36,7 +36,7 @@ h1
 
 .nav{
 	float:right;
-	width:30%;
+	width:20%;
 	padding-top:2%;
 }
 
@@ -86,7 +86,9 @@ h1
 }
 .Question{
 	top:15%;
-	left:30%;
+	left:0%;
+	right:0%;
+
 	text-align:center;
 	position:absolute;
 }
@@ -101,6 +103,7 @@ h1
 	right: 0;
     bottom: 0;
     left: 0;
+    font-size: 1.05vw;
 	
 	
 }
@@ -119,36 +122,53 @@ h1
 
 
 .A{
-	left:18%;
 	top:30%;
+	left:20%;
+	right:60%;
+	text-align:center;
 	position:absolute;
+	font-size: 1vw;
+
 
 }
 
+
+
+
 .B{
-	left:64%;
 	top:30%;
+	left:60%;
+	right:20%;
+	text-align:center;
 	position:absolute;
+	font-size: 1vw;
 }
 
 .C{
-	left:18%;
 	top:65%;
+	left:20%;
+	right:60%;
+	text-align:center;
 	position:absolute;
+	font-size: 1vw;
 }
 
 .D{
-	left:64%;
 	top:65%;
+	left:60%;
+	right:20%;
+	text-align:center;
 	position:absolute;
-	margin:none;
+	font-size: 1vw;
 }
 
-#resultpic
+#resultpic img
 {
-	left:29.3%;
-	top:30%;
+	
 	position:absolute;
+	left:25%;
+	top:30%;
+	width:50vw
 
 }
 	

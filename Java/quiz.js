@@ -4,7 +4,7 @@ window.onload = function()
 }
 function init()
 {
-	console.log("boobies");
+	
 }
 
 var A = 0;

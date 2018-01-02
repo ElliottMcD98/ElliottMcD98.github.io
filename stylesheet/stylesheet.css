@@ -30,18 +30,14 @@ h2
 }
 
 .content img{
-	padding-top: 80px;
+	padding-top: 8%;
 	position:center;
 	opacity: 0.5;
 }
 
 .content li {
 	list-style: none;
-    width: 950px;
-    padding-left: 10px;
-    background: rgba(255, 255, 255, 0.7);
-    font-size:25px;
-
+    text-align: center;
     
 
 
@@ -50,9 +46,12 @@ h2
 
 .content ul {
 	position: absolute; 
-   top: 140%; 
-   left:24%; 
-   width: 100%; 
+   top: 130%; 
+   margin-left: 0%;
+   margin-right: 0%;
+   left:0%;
+   right:0%;
+   font-size: 170%
 }
 
 
@@ -78,22 +77,8 @@ h2
 	bottom:0;
 
 
-
-
 }
 
-#footer li{
-	list-style: none;
-	float:left;
-	margin-left: 15px;
-	padding-top: 15px;
-
-}
-
-#footer ul{
-	background:white;
-	width:100%;
-}
 
 
 
@@ -118,7 +103,7 @@ h2
 
 .nav{
 	float:right;
-	width:30%;
+	width:40%;
 	padding-top:2%;
 }
 
@@ -126,6 +111,7 @@ h2
 {
 	display:inline;
 	margin-right: 4%;
+	float:right;
 
 }
 
@@ -157,10 +143,14 @@ h2
 #buyLinks li {
 	list-style: none;
 	float:left;
-	margin-left: 15px;
-	padding-top: 15px;
-	
+	padding-left: 10%;
+	top: 15%;
+	position: absolute;
 
+}
+
+#buyLinks img{
+	padding-left:50px;
 }
 
 .videos iframe{
@@ -189,6 +179,6 @@ h2
 
 form{
 	float:left;
-	left:30%;
+	left:45%;
 	position:absolute;
 }

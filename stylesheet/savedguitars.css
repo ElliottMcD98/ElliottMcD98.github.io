@@ -7,17 +7,25 @@ html, body {
 	width:100%;
 	font-size: 100%;
 
-
-
 }
+
 
 h1
 {
 	text-shadow: 0 0 3px red;
 }
 
-a{
-	text-decoration: none;
+ul{
+	list-style:none;
+	text-align: center;
+	
+}
+
+#savedguitars h1
+{
+	text-align:center;
+	padding-top: 5%;
+
 }
 
 
@@ -60,13 +68,12 @@ a{
 	float:left;
 }
 
-
 #footer{
 	background:#f2f2f2;
 	width:100%;
 	position:absolute;
 	bottom:0px;	
-	height:25%;
+	
 }
 
 
@@ -90,41 +97,3 @@ a{
 	background:white;
 	width:100%;
 }
-
-#guitar img{
-	position:fixed;
-	
-}
-
-#guitar #head img{
-	padding-left:69%;
-	top:34%;
-}
-
-#guitar #plate img{
-	top:30%;
-	left:25.5%;
-}
-
-#guitar #neck img{
-	left:39%;
-	top:36.1%;
-}
-
-#guitar #body img{
-	left:19.2%;
-	top:20.1%;
-}
-
-#guitar{
-	
-
-}
-
-#save {
-	
-	bottom:0;
-	position:absolute;
-	left:45%;
-}
-
