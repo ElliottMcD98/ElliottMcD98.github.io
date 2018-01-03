@@ -140,7 +140,7 @@ function clickedguitar(event)
 	localStorage.setItem("bodycolour", savedbody);
 	localStorage.setItem("platecolour", savedplate);
 	localStorage.setItem("headcolour", savedhead);
-	window.location.href = "file:///C:/Program%20Files/Sublime%20Text%203/sites/root/customiser.html";
+	window.location.href = "customiser.html";
 
 
 }
