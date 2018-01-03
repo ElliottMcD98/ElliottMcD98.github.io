@@ -102,10 +102,13 @@ function nextquestion(count)
 	if (count == 4)
 	{
 	document.getElementById("nextquestion").innerHTML = (question4);
+
 	document.getElementById("Qpic1").src = "Assets/guitar2.png";
+	document.getElementById("Qpic1").width = "100";
 	document.getElementById("Qpic2").src = "Assets/guitar4.png";
 	document.getElementById("Qpic3").src = "Assets/drums.png";
 	document.getElementById("Qpic4").src = "Assets/mic.png";
+
 
 	document.getElementById("Qtext1").innerHTML = "";
 	document.getElementById("Qtext2").innerHTML = "";
