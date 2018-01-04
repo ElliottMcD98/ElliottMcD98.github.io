@@ -104,10 +104,17 @@ function nextquestion(count)
 	document.getElementById("nextquestion").innerHTML = (question4);
 
 	document.getElementById("Qpic1").src = "Assets/guitar2.png";
-	document.getElementById("Qpic1").width = "100";
+	document.getElementById("Qpic1").id = "Qsmallpic1";
+
+
 	document.getElementById("Qpic2").src = "Assets/guitar4.png";
+	document.getElementById("Qpic2").id = "Qsmallpic2";
+	
 	document.getElementById("Qpic3").src = "Assets/drums.png";
+	document.getElementById("Qpic3").id = "Qsmallpic3";
+
 	document.getElementById("Qpic4").src = "Assets/mic.png";
+	document.getElementById("Qpic4").id = "Qsmallpic4";
 
 
 	document.getElementById("Qtext1").innerHTML = "";
@@ -122,6 +129,12 @@ function nextquestion(count)
 	{
 
 	document.getElementById("nextquestion").innerHTML = (question5);
+	document.getElementById("Qsmallpic1").id = "Qpic1";
+	document.getElementById("Qsmallpic2").id = "Qpic2";
+	document.getElementById("Qsmallpic3").id = "Qpic3";
+	document.getElementById("Qsmallpic4").id = "Qpic4";
+
+
 	document.getElementById("Qpic1").src = "Assets/AnswerBox.png";
 	document.getElementById("Qpic2").src = "Assets/AnswerBox.png";
 	document.getElementById("Qpic3").src = "Assets/AnswerBox.png";

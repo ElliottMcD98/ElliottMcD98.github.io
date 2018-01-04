@@ -97,7 +97,6 @@ h2
 
 }
 
-
 .title
 {
 	float:left;
@@ -107,7 +106,7 @@ h2
 
 .nav{
 	float:right;
-	width:40%;
+	width:60%;
 	padding-top:2%;
 }
 
@@ -116,7 +115,7 @@ h2
 	display:inline;
 	margin-right: 4%;
 	float:right;
-	font-size:1vw;
+	font-size:2vw;
 
 }
 
@@ -146,18 +145,7 @@ h2
 
 
 
-#buyLinks li {
-	list-style: none;
-	float:left;
-	padding-left: 10%;
-	top: 15%;
-	position: absolute;
 
-}
-
-#buyLinks img{
-	padding-left:50px;
-}
 
 .videos iframe{
 	border:0;
@@ -221,6 +209,22 @@ form{
 		left:27%;
 		width:300px;
 		 height:225px;
+
+	}
+
+
+
+}
+
+@media screen and  (min-width: 600px)
+{
+	
+	.nav li
+	{
+		display:inline;
+		margin-right: 4%;
+		float:right;
+		font-size:1vw;
 
 	}
 
