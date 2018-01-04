@@ -40,7 +40,7 @@ h2
 	list-style: none;
     text-align: center;
     font-size:2vw;
-    min-width:500px;
+
     
 
 
@@ -200,13 +200,13 @@ form{
 
 }
 
-@media screen and (min-width: 1470px) and (max-width: 750px)
+@media screen and (max-width: 750px)
 {
 	
 	#actualmap
 	{
 		position:absolute;
-		left:27%;
+		left:15%;
 		width:300px;
 		 height:225px;
 
