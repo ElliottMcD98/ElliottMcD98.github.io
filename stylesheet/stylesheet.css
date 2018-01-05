@@ -24,6 +24,12 @@ h2
 	text-shadow: 0 0 3px red;
 }
 
+a
+{
+	color:black;
+	text-decoration:none;
+}
+
 .container{
 	width: 78%;
 	margin:0 auto;
@@ -78,9 +84,11 @@ h2
 
 #footer img {
 	bottom:0;
+	float:left;
 
 
 }
+
 
 
 
@@ -93,7 +101,7 @@ h2
 	width:100%;
 	top:0px;
 	left:0px;
-	height:12%;
+	height:9%;
 
 }
 
@@ -133,7 +141,7 @@ h2
 
 #home img{
 	position:absolute;
-	top:12%;
+	top:9%;
 }
 
 #home h2{
@@ -192,7 +200,7 @@ form{
 		position:absolute;
 		left:27%;
 		width:450px;
-		 height:337.5px;
+		 height:300px;
 
 	}
 
@@ -207,8 +215,8 @@ form{
 	{
 		position:absolute;
 		left:15%;
-		width:300px;
-		 height:225px;
+		width:280px;
+		 height:180px;
 
 	}
 
@@ -216,7 +224,7 @@ form{
 
 }
 
-@media screen and  (min-width: 600px)
+@media screen and  (min-width: 1000px)
 {
 	
 	.nav li
@@ -226,7 +234,18 @@ form{
 		float:right;
 		font-size:1vw;
 
+
 	}
+
+	#header
+	{
+		height:12%;
+	}
+
+	#home img{
+	position:absolute;
+	top:12%;
+}
 
 
 

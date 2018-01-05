@@ -15,6 +15,12 @@ h1
 	text-shadow: 0 0 3px red;
 }
 
+a
+{
+	color:black;
+	text-decoration:none;
+}
+
 #header
 {
 	background:#f2f2f2;
@@ -61,32 +67,20 @@ h1
 #footer{
 	background:#f2f2f2;
 	width:100%;
-	position:absolute;
-	bottom:0px;	
+	position:fixed;
+	bottom:0px;
+
 	
 }
 
 
 #footer img {
 	bottom:0;
-
-
-
-
-}
-
-#footer li{
-	list-style: none;
 	float:left;
-	margin-left: 15px;
-	padding-top: 15px;
+
 
 }
 
-#footer ul{
-	background:white;
-	width:100%;
-}
 .Question{
 	top:15%;
 	left:0%;
@@ -242,6 +236,32 @@ h1
 {
 	width:80%;
 }
+
+}
+
+@media screen and (max-width: 700px) 
+
+{
+	#Qpic1
+	{
+		width:150%;
+	}
+
+#Qpic2
+	{
+		width:150%;
+	}
+
+
+#Qpic3
+	{
+		width:150%;
+	}
+
+#Qpic4
+	{
+		width:150%;
+	}
 
 }
 
