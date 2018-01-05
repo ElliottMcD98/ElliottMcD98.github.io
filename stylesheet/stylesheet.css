@@ -42,8 +42,8 @@ a
 	opacity: 0.5;
 }
 
-.content li {
-	list-style: none;
+.content p {
+	
     text-align: center;
     font-size:2vw;
 
@@ -85,6 +85,7 @@ a
 #footer img {
 	bottom:0;
 	float:left;
+	width:4%;
 
 
 }
@@ -169,9 +170,16 @@ a
 	text-align: center;
 }
 
+#actualmap
+{
+	
+}
 
 #map{
-	float:right;
+	
+	padding-bottom:12%;
+	text-align:center;
+	
 }
 
 #map h2{
@@ -179,10 +187,8 @@ a
 }
 
 form{
-	float:left;
-	left:45%;
-	position:absolute;
-}
+	text-align: center;
+	}
 
 
 @media screen and (max-width: 1470px)
@@ -190,14 +196,12 @@ form{
 	#map
 	{
 		padding-top:400px;
-		left:0;
-		right:0;
-		position:absolute;
+		padding-bottom:50%
+
 	}
 	#actualmap
 	{
-		position:absolute;
-		left:27%;
+		
 		width:450px;
 		 height:300px;
 
@@ -209,14 +213,20 @@ form{
 
 @media screen and (max-width: 750px)
 {
-	
+	#map
+	{
+		padding-bottom:90%
+	}
 	#actualmap
 	{
-		position:absolute;
-		left:15%;
+		
 		width:280px;
 		 height:180px;
 
+	}
+	#footer img
+	{
+		width:16%;
 	}
 
 
@@ -245,5 +255,47 @@ form{
 	position:absolute;
 	top:12%;
 }
+
+@media screen and  (min-width: 1000px)
+{
+	
+	.nav li
+	{
+		display:inline;
+		margin-right: 4%;
+		float:right;
+		font-size:1vw;
+
+
+	}
+
+	#header
+	{
+		height:12%;
+	}
+
+	#home img{
+	position:absolute;
+	top:12%;
+}
+
+
+
+@media screen and (max-width: 500px)
+{
+	
+	#footer img
+	{
+		width:16%;
+	}
+
+
+
+}
+
+
+
+
+
 
 
