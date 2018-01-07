@@ -271,6 +271,7 @@ a
 
 #customfooter ul{
 	width:100%;
+	display:inline;
 }
 
 #guitar img{
@@ -280,10 +281,7 @@ a
 
 
 
-#guitar{
-	
 
-}
 
 #save {
 	
@@ -384,7 +382,7 @@ a
 }
 
 
-@media screen and (max-width: 1600px)
+@media screen and (max-width: 1750px)
 {
 	#customfooter img
 	{
@@ -393,7 +391,7 @@ a
 
 }
 
-@media screen and (max-width: 1050px)			
+@media screen and (max-width: 1200px)			
 {
 	
 												/*footer of colours is rearranged to allow better viewing on smaller devices*/
