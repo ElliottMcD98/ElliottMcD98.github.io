@@ -6,7 +6,7 @@ head{
 html, body {
 
 	background:#cccccc;
-	font-family: courier;
+	font-family: courier;		/*base style for the page*/
 	margin:auto;
 	height:200%;
 	width:100%;
@@ -194,7 +194,7 @@ form{
 
 
 @media screen and (max-width: 1470px)
-{
+{												/*the map is resized and repositioned for smaller devices*/
 	#map
 	{
 		padding-top:400px;
@@ -213,8 +213,8 @@ form{
 
 }
 
-@media screen and (max-width: 750px)
-{
+@media screen and (max-width: 750px)			
+{												/*the map is resized and repositioned for smaller devices. Footer icons are also enlarged for smaller devices*/
 	#map
 	{
 		padding-bottom:90%
@@ -235,8 +235,8 @@ form{
 
 }
 
-@media screen and  (min-width: 1000px)
-{
+@media screen and  (min-width: 1000px)			
+{												/*header is resized and repositioned for larger devices*/
 	
 	.nav li
 	{
@@ -258,47 +258,10 @@ form{
 	top:12%;
 }
 
-@media screen and  (min-width: 1000px)
-{
-	
-	.nav li
-	{
-		display:inline;
-		margin-right: 4%;
-		float:right;
-		font-size:1vw;
-
-
-	}
-
-	.title img
-	{
-		height:12vh;
-	}
-
-	#header
-	{
-		height:12%;
-	}
-
-	#home img{
-	position:absolute;
-	top:12%;
-}
 
 
 
-@media screen and (max-width: 500px)
-{
-	
-	#footer img
-	{
-		width:16%;
-	}
 
-
-
-}
 
 
 
