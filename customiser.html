@@ -1,6 +1,6 @@
 <!doctype html>
 <head>
-<link rel="stylesheet" href="stylesheet/customiser.css">
+<link rel="stylesheet" href="stylesheet/stylesheet2.css">
 <script src="Java/customiser.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -9,7 +9,7 @@
 
 </body>
 
-<div id = "header">
+<section id = "header">
 		<div class = "title">
 
 			<img src = "Assets/RHCP.png"  style="width:6vw;">
@@ -20,21 +20,21 @@
 		<div class = "nav">
 			<ul>
 				<li><a href = "index.html">Home</a></li>
-				<li><a href = "customiser.html">customiser</a></li>   
+				<li><a href = "customiser.html">customiser</a></li>   <!-- List linking to different parts of the website-->
 				<li><a href = "quiz.html">quiz</a></li>
 				<li><a href = "savedguitars.html">Saved</a></li>
 				</ul>
 		</div>
 	</div>
-</div>
+</section>
 
-<div id = "footer">
+<section id = "customfooter">
 	<ul>
 		<li id = "bodcol"> body colour</li>
 		<ul id = "innerbodcol">
 			<li ><img src = "Assets/regular.png" onclick = bodcolour("regularbody.png")>  </li>
 			<li> <img src = "Assets/blue.png" onclick = bodcolour("bluebody.png")></li>
-			<li> <img src = "Assets/green.png" onclick = bodcolour("greenbody.png")></li>
+			<li> <img src = "Assets/green.png" onclick = bodcolour("greenbody.png")></li>		<!--list of images of colour with an onclick which changes the colour of the part related to the colour-->
 			<li> <img src = "Assets/pink.png" onclick = bodcolour("pinkbody.png")></li>
 			<li> <img src = "Assets/red.png" onclick = bodcolour("redbody.png")></li>
 			<li> <img src = "Assets/yellow.png" onclick = bodcolour("yellowbody.png")></li>
@@ -45,7 +45,7 @@
 		<ul id = "innerplatecol">
 			<li ><img src = "Assets/regular.png" onclick = platecolour("regularplate.png")>  </li>
 			<li> <img src = "Assets/blue.png" onclick = platecolour("blueplate.png")></li>
-			<li> <img src = "Assets/green.png" onclick = platecolour("greenplate.png")></li>
+			<li> <img src = "Assets/green.png" onclick = platecolour("greenplate.png")></li>	<!--list of images of colour with an onclick which changes the colour of the part related to the colour-->
 			<li> <img src = "Assets/pink.png" onclick = platecolour("pinkplate.png")></li>
 			<li> <img src = "Assets/red.png" onclick = platecolour("redplate.png")></li>
 			<li> <img src = "Assets/yellow.png" onclick = platecolour("yellowplate.png")></li>
@@ -57,24 +57,24 @@
 		<ul id = "innerheadcol">
 			<li ><img src = "Assets/regular.png" onclick = headcolour("regularhead.png")>  </li>
 			<li> <img src = "Assets/blue.png" onclick = headcolour("bluehead.png")></li>
-			<li> <img src = "Assets/green.png" onclick = headcolour("greenhead.png")></li>
+			<li> <img src = "Assets/green.png" onclick = headcolour("greenhead.png")></li>	<!--list of images of colour with an onclick which changes the colour of the part related to the colour-->
 			<li> <img src = "Assets/pink.png" onclick = headcolour("pinkhead.png")></li>
 			<li> <img src = "Assets/red.png" onclick = headcolour("redhead.png")></li>
 			<li> <img src = "Assets/yellow.png" onclick = headcolour("yellowhead.png")></li>
 		</ul>
 
 		
-		<h1 onclick = "guitarname()" id = "save"> Save </h1>
+		<h1 onclick = "guitarname()" id = "save"> Save </h1>								<!--Text with onclick allowing the current guitar to be saved into local storage-->
 		
 
 
 
 
-</div>
+</section>
 
 <div id = "guitar">
 	<div id = "body">
-		<img id="bodyimage" src = "Assets/regularbody.png">
+		<img id="bodyimage" src = "Assets/regularbody.png">									<!--Displays the images of each guitar part-->
 	</div>
 
 	<div id = "plate">

@@ -20,7 +20,7 @@ var Q2B = "Foo Fighters"
 var Q2C = "Metallica"
 var Q2D = "Green Day"
 
-var question3 = "How long have you been listening to the Red Hot Chili Peppers?"
+var question3 = "How long have you been listening to the Red Hot Chili Peppers?"    //Here I define all variables I will use for each separate question.
 
 var Q3A = "less than 6 months"
 var Q3B = "Less than 2 years"
@@ -44,7 +44,7 @@ var count = 1
 
 function answer(answer)
 {
-	console.log("working");
+	
 
 	if (answer == 1)
 	{
@@ -53,7 +53,7 @@ function answer(answer)
 
 	if (answer == 2)
 	{
-		B = B + 1;
+		B = B + 1;                   //This increments each value depending on which quiz answer has been chosen. Whichever is the highest at the end of the quiz correlates to which band member you are most like.
 	}
 
 	if (answer == 3)
@@ -75,7 +75,7 @@ function answer(answer)
 
 }
 
-function nextquestion(count)
+function nextquestion(count)                                                //This function determines which question is displayed based on the value of count. The variables defined at the top of the code are used here.
 {
 	if (count == 2)
 	{
@@ -107,7 +107,7 @@ function nextquestion(count)
 	document.getElementById("Qpic1").id = "Qsmallpic1";
 
 
-	document.getElementById("Qpic2").src = "Assets/guitar4.png";
+	document.getElementById("Qpic2").src = "Assets/guitar4.png";      //Question 4 uses different images from the boxes so the image source is changed.
 	document.getElementById("Qpic2").id = "Qsmallpic2";
 	
 	document.getElementById("Qpic3").src = "Assets/drums.png";
@@ -162,10 +162,10 @@ function nextquestion(count)
 	if (count == 7)
 	{
 		
-		$(".answers").remove();
-		if (A > B && A > C && A > D)
+		$(".answers").remove();														//Here I use JQuery to remove all elements in the "answers" id to display the result image.
+		if (A > B && A > C && A > D)                                                          
 		{
-			document.getElementById("nextquestion").innerHTML = ("You're like Anthony");
+			document.getElementById("nextquestion").innerHTML = ("You're like Anthony");				//The highest variable is determined from A, B, C or D and appropriate results are displayed.
 			var pic = document.createElement("img");
 			pic.src = "Assets/AnthonyKiedis.jpg";
 			document.getElementById("resultpic").appendChild(pic);

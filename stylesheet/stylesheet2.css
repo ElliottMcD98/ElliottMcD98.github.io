@@ -1,0 +1,646 @@
+html, body {
+
+	background:#cccccc;
+	font-family: courier;
+	margin:auto;
+	height:100%;
+	width:100%;
+	font-size: 100%;
+
+}
+
+
+h1
+{
+	text-shadow: 0 0 3px red;
+}
+
+a
+{
+	color:black;
+	text-decoration:none;
+}
+
+
+
+#footer{
+	background:#f2f2f2;
+	width:100%;
+	position:fixed;
+	bottom:0px;
+
+	
+}
+
+
+#footer img {
+	bottom:0;
+	float:left;
+	width:4%;
+
+
+}
+
+
+
+
+
+#header
+{
+	background:#f2f2f2;
+	position:fixed;
+	z-index: 1;
+	width:100%;
+	top:0px;
+	left:0px;
+	height:9%;
+
+}
+
+.title
+{
+	float:left;
+	margin:0;
+	font-size:1vw;
+	}
+
+.nav{
+	float:right;
+	width:60%;
+}
+
+.nav li
+{
+	display:inline;
+	margin-right: 4%;
+	float:right;
+	font-size:2vw;
+
+}
+
+.title h1{
+	float:left;
+}
+.title img{
+	float:left;
+	width:6vw;
+	height:9vh;
+}
+
+#savedguitars h1
+{
+	text-align:center;
+	padding-top: 5%;
+
+}
+
+
+#savedguitars h1
+	{
+		text-align:center;
+		padding-top: 100px;
+
+	}
+.Question{
+	top:15%;
+	left:0%;
+	right:0%;
+
+	text-align:center;
+	position:absolute;
+}
+
+.Question h2{
+	
+	margin:0;
+	padding:0;
+	text-align:center;
+	position: absolute;
+	top: 20%;
+	right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 1.05vw;
+	
+	
+}
+
+.answers h2{
+	margin:0;
+	padding:0;
+	text-align:center;
+	position: absolute;
+    top: 15%;
+    right: 20%;
+    bottom: 55%;
+    left: 20%;
+
+
+
+}
+
+
+.A{
+	top:30%;
+	left:20%;
+	right:60%;
+	text-align:center;
+	position:absolute;
+	font-size: 1vw;
+
+
+}
+
+
+
+
+.B{
+	top:30%;
+	left:60%;
+	right:20%;
+	text-align:center;
+	position:absolute;
+	font-size: 1vw;
+}
+
+.C{
+	top:65%;
+	left:20%;
+	right:60%;
+	text-align:center;
+	position:absolute;
+	font-size: 1vw;
+}
+
+.D{
+	top:65%;
+	left:60%;
+	right:20%;
+	text-align:center;
+	position:absolute;
+	font-size: 1vw;
+}
+
+#resultpic img
+{
+	
+	position:absolute;
+	left:25%;
+	top:30%;
+	width:50vw
+
+}
+
+#Qpic1
+{
+	width:100%;
+}
+
+#Qpic2
+{
+	width:100%;
+}
+
+#Qpic3
+{
+	width:100%;
+}
+
+#Qpic4
+{
+	width:100%;
+}
+
+
+#Qsmallpic1
+{
+	width:60%;
+}
+
+#Qsmallpic2
+{
+	width:80%;
+}
+
+
+#Qsmallpic3
+{
+	width:50%;
+}
+
+#Qsmallpic4
+{
+	width:50%;
+}
+
+#allguitars
+{
+	text-align: center;
+	list-style: none;
+}
+
+#customfooter{
+	background:#f2f2f2;
+	width:100%;
+	position:absolute;
+	bottom:0%;	
+	height:25%;
+}
+
+
+#customfooter img {
+	bottom:0;
+
+
+
+
+}
+
+#customfooter li{
+	list-style: none;
+	float:left;
+	margin-left: 15px;
+	padding-top: 15px;
+
+}
+
+#customfooter ul{
+	width:100%;
+}
+
+#guitar img{
+	position:absolute;
+	
+}
+
+
+
+#guitar{
+	
+
+}
+
+#save {
+	
+	bottom:0;
+	position:absolute;
+	left:45%;
+}
+
+
+
+@media screen and (min-width: 1350px) 
+{
+		#guitar #head img{
+		left:1128px;
+		top:321px;
+	}
+
+	#guitar #plate img{
+		left:290px;
+		top:283px;
+		
+	}
+
+	#guitar #neck img{
+		left:552px;
+		top:340px;
+	}
+
+	#guitar #body img{
+		left:170px;
+		top:190px;
+	}
+}
+
+@media screen and (max-width: 1350px) and (min-width:750px), (max-height: 800px)
+{
+		#guitar #head img{
+		left:649px;
+		top:255.5px;
+		width:110px;
+	}
+
+	#guitar #plate img{
+		left:230px;
+		top:236.5px;
+		width:179px;
+		
+	}
+
+	#guitar #neck img{
+		left:361px;
+		top:265px;
+		width:293px;
+	}
+
+	#guitar #body img{
+		left:170px;
+		top:190px;
+		width:291.5px;
+	}
+}
+
+@media screen and (max-width: 750px), (max-height: 550px)
+{
+		#guitar #head img{
+		left:112px;
+		top:133px;
+		width:73.3px;
+		transform: rotate(270deg);
+	}
+
+	#guitar #plate img{
+		left:103px;
+		top:363px;
+		width:119.3px;
+		transform: rotate(270deg);
+		
+	}
+
+	#guitar #neck img{
+		left:49px;
+		top:272px;
+		width:195.3px;
+		transform: rotate(270deg);
+	}
+
+	#guitar #body img{
+		left:50px;
+		top:350px;
+		width:194.3px;
+		transform: rotate(270deg);
+	}
+
+	#customfooter
+	{
+		height:10%;
+	}
+}
+
+
+@media screen and (max-width: 1600px)
+{
+	#customfooter img
+	{
+		width:20px;
+	}
+
+}
+
+@media screen and (max-width: 1050px)
+{
+	
+
+	#bodcol
+	{
+		left:50px;
+		position:absolute;
+		top:30px;
+	}
+
+	#innerbodcol
+	{
+		top:50px;
+		left:-50px;
+		position:absolute;
+	}
+
+	#platecol
+	{
+		left:50px;
+		top:130px;
+		position:absolute;
+	}
+
+	#innerplatecol
+	{
+		top:150px;
+		left:-50px;
+		position:absolute;
+	}
+
+	#headcol
+	{
+		left:50px;
+		top:230px;
+		position:absolute;
+	}
+
+	#innerheadcol
+	{
+		top:250px;
+		left:-50px;
+		position:absolute;
+	}
+
+	#customfooter{
+	top:550px;
+	background:#cccccc;
+
+}
+
+
+}
+
+@media screen and  (min-width: 900px)
+{
+	
+	.nav li
+	{
+		display:inline;
+		margin-right: 4%;
+		float:right;
+		font-size:1vw;
+
+	}
+
+
+
+}
+
+@media screen and  (max-width: 1000px)
+{
+	
+	#savedguitars h1
+	{
+		text-align:center;
+		padding-top: 200px;
+
+	}
+
+
+
+}
+
+
+
+#savedguitars h1
+	{
+		text-align:center;
+		padding-top: 100px;
+
+	}
+
+
+@media screen and  (min-width: 900px)
+{
+	
+	.nav li
+	{
+		display:inline;
+		margin-right: 4%;
+		float:right;
+		font-size:1vw;
+
+	}
+
+
+
+}
+
+@media screen and  (max-width: 1000px)
+{
+	
+	#savedguitars h1
+	{
+		text-align:center;
+		padding-top: 200px;
+
+	}
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) and (max-height: 750px)
+
+{
+	#Qsmallpic1
+{
+	width:80%;
+}
+
+#Qsmallpic2
+{
+	width:80%;
+}
+
+
+#Qsmallpic3
+{
+	width:80%;
+}
+
+#Qsmallpic4
+{
+	width:80%;
+}
+
+}
+
+
+@media screen and (max-width: 500px)
+{
+	
+	#footer img
+	{
+		width:16%;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and  (min-width: 1000px)
+{
+	
+	.nav li
+	{
+		display:inline;
+		margin-right: 4%;
+		float:right;
+		font-size:1vw;
+
+
+	}
+
+	#header
+	{
+		height:12%;
+	}
+
+	#home img{
+	position:absolute;
+	top:12%;
+}
+
+@media screen and  (min-width: 1000px)
+{
+	
+	.nav li
+	{
+		display:inline;
+		margin-right: 4%;
+		float:right;
+		font-size:1vw;
+
+
+	}
+
+	.title img
+	{
+		height:12vh;
+	}
+
+	#header
+	{
+		height:12%;
+	}
+
+	#home img{
+	position:absolute;
+	top:12%;
+}
+
+
+
+@media screen and (max-width: 500px)
+{
+	
+	#footer img
+	{
+		width:16%;
+	}
+
+
+
+}

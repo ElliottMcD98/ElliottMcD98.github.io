@@ -1,13 +1,14 @@
 <!doctype html>
 <head>
-<link rel="stylesheet" href="stylesheet/quiz.css">
+<link rel="stylesheet" href="stylesheet/stylesheet2.css">
 <script src="Java/quiz.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-<div id = "header">
+<section id = "header">
 		<div class = "title">
 
 			<img src = "Assets/RHCP.png"  style="width:6vw;">
@@ -18,7 +19,7 @@
 		<div class = "nav">
 			<ul>
 				<li><a href = "index.html">Home</a></li>
-				<li><a href = "customiser.html">customiser</a></li>   
+				<li><a href = "customiser.html">customiser</a></li>   <!-- List linking to different parts of the website-->
 				<li><a href = "quiz.html">quiz</a></li>
 				<li><a href = "savedguitars.html">Saved</a></li>
 			</ul>
@@ -28,7 +29,7 @@
 
 <div class = "Question">
 	<img src = "Assets/QuestionBox.png" style = "width:40%">
-	<h2 id = "nextquestion"> Out of these which is your favourite album? </h2>
+	<h2 id = "nextquestion"> Out of these which is your favourite album? </h2>  <!--Question box with initial question being displayed -->
 
 </div>
 
@@ -36,7 +37,7 @@
 
 <div class = "answers">
 	<div class = "A">
-		<img id = "Qpic1" src = "Assets/AnswerBox.png" onclick = answer(1) >
+		<img id = "Qpic1" src = "Assets/AnswerBox.png" onclick = answer(1) >    <!--Allanswer boxes are displayed with initial question in. Onclick the answers are changed.-->
 		<h2 id = "Qtext1" onclick = answer(1) > By the Way </h2>
 	</div>
 
@@ -61,14 +62,15 @@
 </div>
 
 
-<div id = "footer">
+<section id = "footer">
 	<ul>
-		<a href = "https://www.facebook.com/ChiliPeppers/"> <img src = "Assets/facebook.png" style="width:4%;"></a>
-		<a href = "https://twitter.com/ChiliPeppers"><img src = "Assets/twitter.png" style="width:4%;"></</a>
-		<a href = "https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5"><img src = "Assets/spotify.png" style="width:4%;"></a>
-		<a href = "https://www.youtube.com/user/RHCPtv"> <img src = "Assets/youtube.png" style="width:4%;"></a>
+		<a href = "https://www.facebook.com/ChiliPeppers/"> <img src = "Assets/facebook.png" ></a>
+		<a href = "https://twitter.com/ChiliPeppers"><img src = "Assets/twitter.png" ></</a>
+		<a href = "https://open.spotify.com/artist/0L8ExT028jH3ddEcZwqJJ5"><img src = "Assets/spotify.png" ></a> <!--footer with links to the bands social media and other links-->
+		<a href = "https://www.youtube.com/user/RHCPtv"> <img src = "Assets/youtube.png" ></a>
 	</ul>
 </li>
+</section>
 
 
 
