@@ -42,6 +42,11 @@ a
 }
 
 
+#footer li
+{
+	display:inline;
+	list-style: none;
+}
 
 
 
