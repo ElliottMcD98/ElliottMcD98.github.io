@@ -36,6 +36,11 @@ a
 	position:relative;
 }
 
+.container img
+{
+	width:100%;
+}
+
 .content img{
 	padding-top: 8%;
 	position:center;
@@ -46,6 +51,10 @@ a
 	
     text-align: center;
     font-size:2vw;
+    top:20%;
+	position:absolute;
+	left:0%;
+	right:0%;
 
     
 
@@ -53,14 +62,12 @@ a
 
 }
 
-.content ul 
+
+.videos iframe
 {
-	top:20%;
-	position:absolute;
-	left:0%;
-	right:0%;
-   
+	width:50%;
 }
+
 
 
 
@@ -90,6 +97,11 @@ a
 
 }
 
+#footer li
+{
+	display:inline;
+	list-style: none;
+}
 
 
 
@@ -137,6 +149,7 @@ a
 }
 
 #home iframe{
+	width:100%;
 	padding-top:12.5%;
 	border:0;
 }
@@ -166,6 +179,15 @@ a
 	border:0;
 	margin:0;
 	padding:0;
+	width:25%;
+}
+
+.videos #rightone iframe{
+	float:right;
+	border:0;
+	margin:0;
+	padding:0;
+	width:50%;
 }
 
 #contact h1{
