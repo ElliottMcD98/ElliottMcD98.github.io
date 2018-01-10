@@ -10,15 +10,15 @@ function init()
 	
 	if (window.location.href.indexOf("savedguitars") > -1)
 	{
-		listnames();												//This checks the URL of the page.
+		listNames();												//This checks the URL of the page.
 	}
 
-	if (localStorage.getItem("bodycolour") === null && localStorage.getItem("platecolour") === null && localStorage.getItem("headcolour") === null )		//Checks there is no local storage for any of the customisable parts of the guitar.
+	if (localStorage.getItem("bodyColour") === null && localStorage.getItem("plateColour") === null && localStorage.getItem("headColour") === null )		//Checks there is no local storage for any of the customisable parts of the guitar.
 	{
 
-		document.getElementById("bodyimage").src = "Assets/regularbody.png";
-		document.getElementById("plateimage").src ="Assets/regularplate.png";		//Regular coloured guitar parts are displayed if there is no local storage
-		document.getElementById("headimage").src ="Assets/regularhead.png";
+		document.getElementById("bodyImage").src = "Assets/regularbody.png";
+		document.getElementById("plateImage").src ="Assets/regularplate.png";		//Regular coloured guitar parts are displayed if there is no local storage
+		document.getElementById("headImage").src ="Assets/regularhead.png";
 		var guitars = [];
 		var bodies = [];
 		var plates = [];
@@ -35,9 +35,9 @@ function init()
 	else
 	{
 		
-		document.getElementById("bodyimage").src = localStorage.getItem("bodycolour");			//If there is local storage of any of the customisable guitar parts display them.
-		document.getElementById("plateimage").src = localStorage.getItem("platecolour");
-		document.getElementById("headimage").src = localStorage.getItem("headcolour");
+		document.getElementById("bodyImage").src = localStorage.getItem("bodyColour");			//If there is local storage of any of the customisable guitar parts display them.
+		document.getElementById("plateImage").src = localStorage.getItem("plateColour");
+		document.getElementById("headImage").src = localStorage.getItem("headColour");
 		
 	}
 
@@ -50,47 +50,47 @@ function init()
 }
 
 
-function bodcolour(colour)												//This function is used when a body colour is clicked and sets it to the chosen colour by fetching the appropriate image.
+function bodColour(colour)												//This function is used when a body colour is clicked and sets it to the chosen colour by fetching the appropriate image.
 {
 	console.log(colour);
-	document.getElementById("bodyimage").src = "Assets/"+colour;			
-	localStorage.setItem("bodycolour", "Assets/"+colour);
+	document.getElementById("bodyImage").src = "Assets/"+colour;			
+	localStorage.setItem("bodyColour", "Assets/"+colour);
 }
 
-function platecolour(colour)											//This function is used when a plate colour is clicked and sets it to the chosen colour by fetching the appropriate image.
+function plateColour(colour)											//This function is used when a plate colour is clicked and sets it to the chosen colour by fetching the appropriate image.
 {
 	console.log(colour);
-	document.getElementById("plateimage").src = "Assets/"+colour;
-	localStorage.setItem("platecolour", "Assets/"+colour);
+	document.getElementById("plateImage").src = "Assets/"+colour;
+	localStorage.setItem("plateColour", "Assets/"+colour);
 }
 
-function headcolour(colour)												//This function is used when a head colour is clicked and sets it to the chosen colour by fetching the appropriate image.
+function headColour(colour)												//This function is used when a head colour is clicked and sets it to the chosen colour by fetching the appropriate image.
 {
 	console.log(colour);
-	document.getElementById("headimage").src = "Assets/"+colour;
-	localStorage.setItem("headcolour", "Assets/"+colour);
+	document.getElementById("headImage").src = "Assets/"+colour;
+	localStorage.setItem("headColour", "Assets/"+colour);
 }
 
 
-function guitarname()
+function guitarName()
 {
 	var count = localStorage.getItem("count");
 	var currentName = prompt("Name your creation.");					//When save is selected a prompt is displayed to enter a name for the created guitar.
-	var localguitars = JSON.parse(localStorage.getItem("guitars"));     //The guitars string is accessed in local storage and parsed using JSON.
-	localguitars[count] = currentName;									//The name for the guitar is stored at the "count" location in the array.
-	localStorage.setItem("guitars", JSON.stringify(localguitars));		//It is then converted back to a string and is stored in local storage.
+	var localGuitars = JSON.parse(localStorage.getItem("guitars"));     //The guitars string is accessed in local storage and parsed using JSON.
+	localGuitars[count] = currentName;									//The name for the guitar is stored at the "count" location in the array.
+	localStorage.setItem("guitars", JSON.stringify(localGuitars));		//It is then converted back to a string and is stored in local storage.
 
-	var localbodies = JSON.parse(localStorage.getItem("bodies"));		//For each customisable part of the guitar a similar method is used as the name of the guitar.
-	localbodies[count] = localStorage.getItem("bodycolour");			//The current colour of the part is saved in an array and then in local storage.
-	localStorage.setItem("bodies", JSON.stringify(localbodies));
+	var localBodies = JSON.parse(localStorage.getItem("bodies"));		//For each customisable part of the guitar a similar method is used as the name of the guitar.
+	localBodies[count] = localStorage.getItem("bodyColour");			//The current colour of the part is saved in an array and then in local storage.
+	localStorage.setItem("bodies", JSON.stringify(localBodies));
 
-	var localplates = JSON.parse(localStorage.getItem("plates"));
-	localplates[count] = localStorage.getItem("platecolour");
-	localStorage.setItem("plates", JSON.stringify(localplates));
+	var localPlates = JSON.parse(localStorage.getItem("plates"));
+	localPlates[count] = localStorage.getItem("plateColour");
+	localStorage.setItem("plates", JSON.stringify(localPlates));
 
-	var localheads = JSON.parse(localStorage.getItem("heads"));
-	localheads[count] = localStorage.getItem("headcolour");
-	localStorage.setItem("heads", JSON.stringify(localheads));
+	var localHeads = JSON.parse(localStorage.getItem("heads"));
+	localHeads[count] = localStorage.getItem("headColour");
+	localStorage.setItem("heads", JSON.stringify(localHeads));
 
 	count++;															//Count is incremented for the next addition to the list of guitars
 	localStorage.setItem("count", count);
@@ -104,15 +104,15 @@ function guitarname()
 	
 }
 
-function listnames()													//This is used when the saved guitars page is loaded. The names of guitars are fetched from local storage and displayed.
+function listNames()													//This is used when the saved guitars page is loaded. The names of guitars are fetched from local storage and displayed.
 {
-	var localguitars = JSON.parse(localStorage.getItem("guitars"));
-	var list = document.getElementById("allguitars");
-	var localguitars = JSON.parse(localStorage.getItem("guitars"));
-	for (i = 0; i < localguitars.length; i++)
+	var localGuitars = JSON.parse(localStorage.getItem("guitars"));
+	var list = document.getElementById("allGuitars");
+	var localGuitars = JSON.parse(localStorage.getItem("guitars"));
+	for (i = 0; i < localGuitars.length; i++)
 	{
 		var enter = document.createElement("li");
-		enter.appendChild(document.createTextNode(localguitars[i]));
+		enter.appendChild(document.createTextNode(localGuitars[i]));
 		list.appendChild(enter);
 		enter.id = i;
 		
@@ -127,17 +127,17 @@ function clickedguitar(event)
 {
 	var number = event.target.id;										//If a guitar is selected on the home page its position in the array is fetched.
 	console.log(number);
-	var localbodies = JSON.parse(localStorage.getItem("bodies"));
-	var savedbody = localbodies[number];
-	var localplates = JSON.parse(localStorage.getItem("plates"));
-	var savedplate = localplates[number];
-	var localheads = JSON.parse(localStorage.getItem("heads"));
-	var savedhead = localheads[number];
+	var localBodies = JSON.parse(localStorage.getItem("bodies"));
+	var savedBody = localBodies[number];
+	var localPlates = JSON.parse(localStorage.getItem("plates"));
+	var savedPlate = localPlates[number];
+	var localHeads = JSON.parse(localStorage.getItem("heads"));
+	var savedHead = localHeads[number];
 	
 
-	localStorage.setItem("bodycolour", savedbody);						//They are then stored in local storage so are used when the customiser page is loaded.
-	localStorage.setItem("platecolour", savedplate);
-	localStorage.setItem("headcolour", savedhead);
+	localStorage.setItem("bodyColour", savedBody);						//They are then stored in local storage so are used when the customiser page is loaded.
+	localStorage.setItem("plateColour", savedPlate);
+	localStorage.setItem("headColour", savedHead);
 	window.location.href = "customiser.html";
 
 

@@ -186,7 +186,7 @@ a
 	font-size: 1vw;
 }
 
-#resultpic img
+#resultPic img
 {
 	
 	position:absolute;
@@ -196,49 +196,49 @@ a
 
 }
 
-#Qpic1
+#QPic1
 {
 	width:100%;
 }
 
-#Qpic2
+#QPic2
 {
 	width:100%;
 }
 
-#Qpic3
+#QPic3
 {
 	width:100%;
 }
 
-#Qpic4
+#QPic4
 {
 	width:100%;
 }
 
 
-#Qsmallpic1
+#QSmallPic1
 {
 	width:60%;
 }
 
-#Qsmallpic2
+#QSmallPic2
 {
 	width:80%;
 }
 
 
-#Qsmallpic3
+#QSmallPic3
 {
 	width:50%;
 }
 
-#Qsmallpic4
+#QSmallPic4
 {
 	width:50%;
 }
 
-#allguitars
+#allGuitars
 {
 	text-align: center;
 	list-style: none;
@@ -523,23 +523,23 @@ a
 @media screen and (max-width: 1000px) and (max-height: 750px)
 
 {												/*images are resized in the quiz for smaller devices*/
-	#Qsmallpic1
+	#QSmallPic1
 {
 	width:80%;
 }
 
-#Qsmallpic2
+#QSmallPic2
 {
 	width:80%;
 }
 
 
-#Qsmallpic3
+#QSmallPic3
 {
 	width:80%;
 }
 
-#Qsmallpic4
+#QSmallPic4
 {
 	width:80%;
 }

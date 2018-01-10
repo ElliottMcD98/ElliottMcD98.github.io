@@ -79,48 +79,48 @@ function nextquestion(count)                                                //Th
 {
 	if (count == 2)
 	{
-	document.getElementById("nextquestion").innerHTML = (question2);
-	document.getElementById("Qtext1").innerHTML = Q2A;
-	document.getElementById("Qtext2").innerHTML = Q2B;
-	document.getElementById("Qtext3").innerHTML = Q2C;
-	document.getElementById("Qtext4").innerHTML = Q2D;
+	document.getElementById("nextQuestion").innerHTML = (question2);
+	document.getElementById("QText1").innerHTML = Q2A;
+	document.getElementById("QText2").innerHTML = Q2B;
+	document.getElementById("QText3").innerHTML = Q2C;
+	document.getElementById("QText4").innerHTML = Q2D;
 
 
 	}
 
 	if (count == 3)
 	{
-	document.getElementById("nextquestion").innerHTML = (question3);
-	document.getElementById("Qtext1").innerHTML = Q3A;
-	document.getElementById("Qtext2").innerHTML = Q3B;
-	document.getElementById("Qtext3").innerHTML = Q3C;
-	document.getElementById("Qtext4").innerHTML = Q3D;
+	document.getElementById("nextQuestion").innerHTML = (question3);
+	document.getElementById("QText1").innerHTML = Q3A;
+	document.getElementById("QText2").innerHTML = Q3B;
+	document.getElementById("QText3").innerHTML = Q3C;
+	document.getElementById("QText4").innerHTML = Q3D;
 
 
 	}
 
 	if (count == 4)
 	{
-	document.getElementById("nextquestion").innerHTML = (question4);
+	document.getElementById("nextQuestion").innerHTML = (question4);
 
-	document.getElementById("Qpic1").src = "Assets/guitar2.png";
-	document.getElementById("Qpic1").id = "Qsmallpic1";
+	document.getElementById("QPic1").src = "Assets/guitar2.png";
+	document.getElementById("QPic1").id = "QSmallPic1";
 
 
-	document.getElementById("Qpic2").src = "Assets/guitar4.png";      //Question 4 uses different images from the boxes so the image source is changed.
-	document.getElementById("Qpic2").id = "Qsmallpic2";
+	document.getElementById("QPic2").src = "Assets/guitar4.png";      //Question 4 uses different images from the boxes so the image source is changed.
+	document.getElementById("QPic2").id = "QSmallPic2";
 	
-	document.getElementById("Qpic3").src = "Assets/drums.png";
-	document.getElementById("Qpic3").id = "Qsmallpic3";
+	document.getElementById("QPic3").src = "Assets/drums.png";
+	document.getElementById("QPic3").id = "QSmallPic3";
 
-	document.getElementById("Qpic4").src = "Assets/mic.png";
-	document.getElementById("Qpic4").id = "Qsmallpic4";
+	document.getElementById("QPic4").src = "Assets/mic.png";
+	document.getElementById("QPic4").id = "QSmallPic4";
 
 
-	document.getElementById("Qtext1").innerHTML = "";
-	document.getElementById("Qtext2").innerHTML = "";
-	document.getElementById("Qtext3").innerHTML = "";
-	document.getElementById("Qtext4").innerHTML = "";
+	document.getElementById("QText1").innerHTML = "";
+	document.getElementById("QText2").innerHTML = "";
+	document.getElementById("QText3").innerHTML = "";
+	document.getElementById("QText4").innerHTML = "";
 
 
 	}
@@ -128,22 +128,22 @@ function nextquestion(count)                                                //Th
 		if (count == 5)
 	{
 
-	document.getElementById("nextquestion").innerHTML = (question5);
-	document.getElementById("Qsmallpic1").id = "Qpic1";
-	document.getElementById("Qsmallpic2").id = "Qpic2";
-	document.getElementById("Qsmallpic3").id = "Qpic3";
-	document.getElementById("Qsmallpic4").id = "Qpic4";
+	document.getElementById("nextQuestion").innerHTML = (question5);
+	document.getElementById("QSmallPic1").id = "QPic1";
+	document.getElementById("QSmallPic2").id = "QPic2";
+	document.getElementById("QSmallPic3").id = "QPic3";
+	document.getElementById("QSmallPic4").id = "QPic4";
 
 
-	document.getElementById("Qpic1").src = "Assets/AnswerBox.png";
-	document.getElementById("Qpic2").src = "Assets/AnswerBox.png";
-	document.getElementById("Qpic3").src = "Assets/AnswerBox.png";
-	document.getElementById("Qpic4").src = "Assets/AnswerBox.png";
+	document.getElementById("QPic1").src = "Assets/AnswerBox.png";
+	document.getElementById("QPic2").src = "Assets/AnswerBox.png";
+	document.getElementById("QPic3").src = "Assets/AnswerBox.png";
+	document.getElementById("QPic4").src = "Assets/AnswerBox.png";
 
-	document.getElementById("Qtext1").innerHTML = Q5A;
-	document.getElementById("Qtext2").innerHTML = Q5B;
-	document.getElementById("Qtext3").innerHTML = Q5C;
-	document.getElementById("Qtext4").innerHTML = Q5D;
+	document.getElementById("QText1").innerHTML = Q5A;
+	document.getElementById("QText2").innerHTML = Q5B;
+	document.getElementById("QText3").innerHTML = Q5C;
+	document.getElementById("QText4").innerHTML = Q5D;
 
 
 	}
@@ -165,45 +165,45 @@ function nextquestion(count)                                                //Th
 		$(".answers").remove();														//Here I use JQuery to remove all elements in the "answers" id to display the result image.
 		if (A > B && A > C && A > D)                                                          
 		{
-			document.getElementById("nextquestion").innerHTML = ("You're like Anthony");				//The highest variable is determined from A, B, C or D and appropriate results are displayed.
+			document.getElementById("nextQuestion").innerHTML = ("You're like Anthony");				//The highest variable is determined from A, B, C or D and appropriate results are displayed.
 			var pic = document.createElement("img");
 			pic.src = "Assets/AnthonyKiedis.jpg";
-			document.getElementById("resultpic").appendChild(pic);
+			document.getElementById("resultPic").appendChild(pic);
 			
 		}
 
 		else if (B > A && B > C && B > D)
 		{
 			console.log("You're like Flea");
-			document.getElementById("nextquestion").innerHTML = ("You're like Flea");
+			document.getElementById("nextQuestion").innerHTML = ("You're like Flea");
 			var pic = document.createElement("img");
 			pic.src = "Assets/Flea.jpg";
-			document.getElementById("resultpic").appendChild(pic);
+			document.getElementById("resultPic").appendChild(pic);
 		}
 
 		else if (C > A && C > B && C > D)
 		{
-			document.getElementById("nextquestion").innerHTML = ("You're like Chad");
+			document.getElementById("nextQuestion").innerHTML = ("You're like Chad");
 			var pic = document.createElement("img");
 			pic.src = "Assets/Chad.jpg";
-			document.getElementById("resultpic").appendChild(pic);
+			document.getElementById("resultPic").appendChild(pic);
 			
 		}
 
 		else if (D > A && D > C && D > B)
 		{
-			document.getElementById("nextquestion").innerHTML = ("You're like Josh");
+			document.getElementById("nextQuestion").innerHTML = ("You're like Josh");
 			var pic = document.createElement("img");
 			pic.src = "Assets/josh.jpg";
-			document.getElementById("resultpic").appendChild(pic);
+			document.getElementById("resultPic").appendChild(pic);
 		}
 
 		else
 		{
-			document.getElementById("nextquestion").innerHTML = ("You're like John");
+			document.getElementById("nextQuestion").innerHTML = ("You're like John");
 			var pic = document.createElement("img");
 			pic.src = "Assets/john.jpg";
-			document.getElementById("resultpic").appendChild(pic);
+			document.getElementById("resultPic").appendChild(pic);
 		}
 
 
