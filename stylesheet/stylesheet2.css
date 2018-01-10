@@ -92,6 +92,12 @@ a
 	height:9vh;
 }
 
+#home iframe{
+	width:100%;
+	padding-top:7%;
+	border:0;
+}
+
 #savedguitars h1
 {
 	text-align:center;
