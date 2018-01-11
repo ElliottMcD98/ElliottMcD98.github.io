@@ -71,7 +71,7 @@ a
 
 .nav{
 	float:right;
-	width:60%;
+	width:67%;
 }
 
 .nav li
@@ -91,6 +91,8 @@ a
 	width:6vw;
 	height:9vh;
 }
+
+
 
 #home iframe{
 	width:100%;
